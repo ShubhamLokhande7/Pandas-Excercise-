@@ -1,1 +1,48 @@
-# Pandas_Excercise-
+# basic information about function 
+#these are the 20% pandas functions used in 80% of time in data analysis project 
+- read_csv(): reads a CSV file and creates a DataFrame
+- head(): displays the first n rows of a DataFrame (default n=5)
+- tail(): displays the last n rows of a DataFrame (default n=5)
+- dtypes: returns the data types of each column in a DataFrame
+- describe(include='object'): returns summary statistics for columns with object data type
+- info(): prints a concise summary of a DataFrame
+- df.columns: returns the column labels of a DataFrame
+- selecting columns: selects specific columns from a DataFrame
+- df[['Name']]: selects a single column from a DataFrame as a DataFrame
+- df[['Name', 'Platform', 'Year_of_Release']]: selects multiple columns from a DataFrame as a DataFrame
+- df._get_numeric_data(): returns all numeric columns of a DataFrame
+- df.select_dtypes('object'): selects columns with object data type from a DataFrame
+- df.select_dtypes('number'): selects all numeric columns from a DataFrame
+- df.select_dtypes('int'): selects all integer columns from a DataFrame
+- df.select_dtypes(['object','int']): selects columns with object or integer data type from a DataFrame
+- loc[]: selects rows and columns by label
+- iloc[]: selects rows and columns by index
+- isin(): returns a boolean mask indicating whether each element is in the specified list or not
+- between(): returns a boolean mask indicating whether each element is between the specified values or not
+- ~: negates a boolean mask
+- query(): selects rows from a DataFrame that meet a specified condition
+- nunique(): returns the number of unique values in each column
+- unique(): returns the unique values in a column
+- set_index(): sets the DataFrame index (row labels) using one or more columns
+- reset_index(): resets the DataFrame index to a simple sequential integer index
+- rename(): renames columns or index labels of a DataFrame
+- nlargest(): returns the n largest values in a column
+- nsmallest(): returns the n smallest values in a column
+- savefig('Sales.jpg',transparent=True): saves a figure or plot to a file
+- value_counts(): returns the counts of unique values in a column
+# aggregate function: calculates summary statistics (e.g. mean, min, max, sum) for a column or group of columns
+- mode(): returns the mode(s) of a column
+- min(): returns the minimum value in a column
+- max(): returns the maximum value in a column
+- mean(): returns the mean (average) value in a column
+- median(): returns the median (middle) value in a column
+- std(): returns the standard deviation of a column
+- count(): returns the number of non-null values in a column
+- sum(): returns the sum of values in a column
+- quantile(0.8): returns the 80th percentile of a column
+- cumsum(): returns the cumulative sum of values in a column
+- cut(): bins values into discrete intervals based on specified bins
+- qcut(): bins values into discrete intervals based on specified quantiles
+- apply(): applies a function to each row or column of a DataFrame
+- corr(): returns the correlation between columns of a DataFrame
+- groupby(): groups rows of a DataFrame by one or more columns and applies
